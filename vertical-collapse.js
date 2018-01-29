@@ -85,7 +85,9 @@
             }
             else {
                 // add top button event show 
-                 $( this ).click( function( event ){ self.show( event ); } );
+                $( this ).click( function( event ){ self.show( event ); } );
+                // find button bottom button and hide it
+                $( this ).parent().find( '.vertical-collapse-toggle-button-bottom' ).css( 'display', 'none' );
             }
             // has class start open
             
